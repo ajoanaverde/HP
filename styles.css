@@ -4,43 +4,67 @@
 	src: url("/fonts/harryP.ttfF") format("truetype");
 }
 */
+/********* general **************/
+
+:root {
+    --orange: #ff9027;
+	--blanc: #FCFEFC;
+/*	--jauneHuff:
+	--vertSlyth:
+	--bleuRavenc:
+	--rougeGriffind:
+}
+*/
+}
 body {
 	margin: 0;
 	background-color: black;
 	font-family: "URW Chancery L", cursive;
+	color: white;
 /*	font-family: "HP";	*/
-}
-#home1 {
-	margin: 0;
-	background-image: url(chateau-poudlard.jpg);	
-	background-repeat: no-repeat;
-	background-size: cover;	
-	filter: grayscale(100%);
-	height: 1100px;
-	width: 1920px;
-	position: fixed;
-	top: 0;
-	background-position: bottom;
-}
-#home1:hover {
-	filter: grayscale(0);
 }
 a {
 	text-decoration: none;
 	color: white;
+	font-weight: bold;;
+}
+a:hover {
+	text-shadow: -2px 2px 3px var(--orange);
+	font-weight: bold;
+}
+
+/*************** #lang *******************/
+
+.lang {
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+
+
+/*************** index *******************/
+
+.home {
+	width: 100%;
+	display: block;
+	filter: grayscale(100%);
+    margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	min-height: 1100px;	
+	background-position: top;	
+}
+.home:hover {
+	filter: grayscale(0);
 }
 
 header {
-/*	margin: 0;	*/
 	padding: 0;
 	letter-spacing: .5em;
 }
-#home:hover {
-	filter: grayscale(0);
-}
 .titre1, #entree {
-	filter: grayscale(0%);
-	color: white;
 	text-align: center;
 	position: relative;
 }
@@ -50,126 +74,219 @@ h1.titre1 {
 	top:20px;
 	margin-bottom: 10px;
 	letter-spacing: .8em;
-	text-shadow: -3px 3px 10px #ff9027;
+	text-shadow: -3px 3px 10px var(--orange);
 }
 h2.titre1 {
 	font-size: 5em; 
 	top:30px;
-	text-shadow: -3px 3px 10px #ff9027;
+	text-shadow: -3px 3px 10px var(--orange);
+}
+.titre1:hover {
+    filter: grayscale(0%);
 }
 
-#entree {
-	text-decoration: none;
-	color: #060a25;
-	background-color: grey;
-	border-radius: 15px;
-	box-shadow: -1px 1px 3px white;
-	width: 250px;
-	height: 35px;
-	display: block;
-	margin: 200px auto 0 auto;
-	text-align: center;
-	font-size: 1.8em;
-	font-weight: bold;
-	padding: 15px;
-	text-shadow: -1px 1px 3px #ff9027;
-}
-#entree:hover {
-	color: #ff9027;
-	background-color: silver;
-	box-shadow: -1px 1px 3px #ff9027;
-}
 
-.audio {
-	margin-left: 100px;
-	letter-spacing: 0;
-	width: 300px;
-	height: 40px;
+/***************** #homeIndex ****************/
 
-}
-
-/********* salleBanquets.html ********************/
-#home2 {
-	background-image: url(Grande_Salle.jpg);	
-	background-repeat: no-repeat;
-	width: 100%;
-	display: block;
-	color: white;
-	height: 1700px;
-	background-size: cover;
-	filter: grayscale(100%);
+#homeIndex {
+    background-image: url(./IMG/chateau-poudlard.jpg);
 	position: absolute;
 	top: 0;
 }
-#home2:hover {
-	filter: grayscale(0);
 
+.titre1, #entree {
+/*	filter: grayscale(0%);  */
+/*	color: white;   */
+    text-align: center;
+    position: relative;
 }
-#home2 {
-	
+h1.titre1 {
+    font-size: 10em; 
+    font-weight: bold;
+    top:20px;
+    margin-bottom: 10px;
+    letter-spacing: .8em;
+    text-shadow: -3px 3px 10px #ff9027;
 }
-#header2 .titre2 {
-	text-align: center;
+h2.titre1 {
+    font-size: 5em; 
+    top:30px;
+    text-shadow: -3px 3px 10px #ff9027;
 }
-h1.titre2 {
+.titre1:hover {
+    filter: grayscale(0%);
+}
+
+#entree {
+/*	text-decoration: none;  */
+    color: #060a25;
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: -1px 1px 3px white;
+    width: 250px;
+    height: 35px;
+    display: block;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 15px;
+    text-shadow: -1px 1px 3px #ff9027;
+    filter: grayscale(100%);
+}
+#entree:hover {
+/*	color: #ff9027; */
+    background-color: silver;
+    box-shadow: -1px 1px 3px #ff9027;
+    filter: grayscale(0%);
+}
+
+.audio {
+    margin-left: 100px;
+    letter-spacing: 0;
+    width: 300px;
+    height: 40px;
+}
+
+/****** animation chauve-souris *******************/
+
+div#animP1 {
+	height: 50px;
+}
+div#animP1 img {
+	width: 5%;
+	display: block;
+	margin-left: -100px;
+
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 7s; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 7s;
+	animation-delay: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+/*	animation-timing-function: steps(2);	*/
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+	from {margin-left: -100px;width: 5%;}
+	to {margin-left: 1540px;width: 1%;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+	from {margin-left: -100px;width: 5%;}
+	to {margin-left: 1540px;width: 0%;}
+  }
+/********** fin anim chauve-souris ********************/
+
+
+/********** pages2 et autres épisodes ******************/
+
+
+h1.titre {
 	margin-top: 200px;
 	font-size: 5em;
 	letter-spacing: .5em;
 	text-shadow: -2px 2px 3px #ff9027;
 }
-h2.titre2 {
+h2.titre {
 	font-size: 3em;
-	margin-top: 50px;
+	margin-top: 200px;
+	margin-bottom: 250px;
 	text-shadow: -2px 2px 3px #ff9027;
 }
+h1, h2 {
+	text-align: center;
+}
 
-#video2 {
+/********* salleBanquets.html ********************/
+
+#home1 {
+	min-height: 1700px;
+	background-image: url(./IMG/Grande_Salle.png);	
+	background-repeat: no-repeat;
+	background-position-y: 0px;
+	background-size: auto;
+}
+
+
+#videoEp {
 	margin: 10px auto;
 	width: 720px;
 }
-.video2 span {
+.videoEp span {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: .6em;	
 }
-figcaption.video2 {
+figcaption {
 	letter-spacing: .1em;
-
+	margin-bottom: 100px;
+}
+figcaption span {
+	text-decoration: underline;
 }
 
 
-/************ grid-container ****************/
+
+/************ grid-container general ****************/
 .grid-container {
 	display: grid;
-	grid-template-columns: 24% 24% 24% 24%;
-	padding: 10px;
-	grid-column-gap: 10px;
-	grid-row-gap: 50px;
+	width: 95%;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows: 500px 400px;
+	margin: 0 auto;
 }
-
-.grid-item {
+.grid-itemEp {
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
 /*	border: 1px white solid;	*/
 }
-.item2 {
-	grid-column-start: 2;
-	grid-column-end: 4;
+
+.grid-container-emblemes {
+	display: grid;
+	width: 95%;
+	grid-template-columns: 24.98% 24.98% 24.98% 24.98%;
+	grid-template-rows: 600px;
+	margin: 0 auto;
+}
+.grid-item-emblemes {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+/*	border: 1px white solid;	*/
+}
+/*
+.grid-item-emblemes img {
+
+}	*/
+
+/******************** grid-container home2 **************/
+
+#homeEp #gridItem2 {
+	grid-column-start: 3/span 2;
+/*	grid-column-end: 6;	*/
 }
 
-#gridItem31 {
+#homeEp #gridItem31 {
 
 }
+#gridItem1 a {
+	margin: 0 auto;
+	display: block;
+	height: 100px;
+	margin-top: 200px;
+	line-height: 50px;
+}
 
-a.liens2 {
+a.liensEp {
 	display: block;
 	margin: auto;
 /*	border: #ff9027 1px solid;	*/
-	line-height: 650%;
-}
-#gridItem31:hover, #gridItem32:hover {
-	text-shadow: -2px 2px 3px #ff9027;
-	font-weight: bold;
+	height: 50px;
+	margin-top: 150px;
 }
 
 .emblemes {
@@ -184,139 +301,15 @@ a.liens2 {
 }
 
 
+/************* page secrets *********************/
+
+body#secrets {
+	background-image: url("IMG/porteChambreSecrets-1920px.jpg");	
+	background-repeat: no-repeat;	
+}
 
 
 
 
-	/*	grid-column: 2 / 4;	shorthand 
-or grid-column: 2 / span 2;
-Idem pour grid-row: 
-grid-area Example :
-Make "item8" start on row-line 1 and column-line 2, and end on row-line 5 and column line 6:
-.item8 {
-	grid-area: 1 / 2 / 5 / 6;
-	ou grid-area: 2 / 1 / span 2 / span 3;
-}
-nommer zones : https://www.w3schools.com/css/css_grid_item.asp
-*/
 
 
-
-
-/*
-header a {
-	display: block;
-	width: 100%;
-	height: 956px;
-	margin-top: 0;
-	position: relative;
-	top: 0;
-}
-*/
-/*
-#mainMenu {
-	border: 1px black solid;
-	margin-top: 0;
-	height: 100px;
-}
-#mainMenu menuitem {
-	display: inline-block;
-}
-
-#imgBann {
-	margin: 0 auto;
-/* 	background-color: #ff9027; */
-/*
-}
-figure {
-	display: inline-block;
-	width: 24%;
-	margin: 0;
-	vertical-align: middle;
-}
-
-img {
-	margin: 0 auto;
-	padding: 0;
- 	height: 100px;
-	max-width: 100%;
-	display: block;
-}
-*/
-/*
-#formEntree {
-	font-size: 3em;
-	margin-top: 80px;
-	top: 100px;
-}
-h4.titre1 {
-	font-size: 2em;
-	top: 50px;
-	margin-left: 1600px;
-	margin-right: 20px;
-}
-#motDePasse {
-	width: 400px;
-	vertical-align: middle;
-	border-radius: 5px;
-}
-#entrer {
-	font-size: 0.8em;
-	border-radius: 15px;
-	padding: 10px;
-	vertical-align: middle;
-	top: 30px;
-	position: relative;
-	font-weight: bold;
-}
-header:hover #entrer {
-	border-radius: 15px;
-}
-*/
- /* Tooltip container 
- .tooltip {
-	position: relative;
-	display: inline-block;
-	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  /*}
-  
-  /* Tooltip text 
-  .tooltip .tooltiptext {
-	visibility: hidden;
-	width: 200px;
-	background-color: #555;
-	color: #fff;
-	text-align: center;
-	padding: 10px 0;
-	border-radius: 10px;
-  
-	/* Position the tooltip text 
-	position: absolute;
-	z-index: 1;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -60px;
-  
-	/* Fade in tooltip 
-	opacity: 0;
-	transition: opacity 0.3s;
-  }
-  
-  /* Tooltip arrow 
-  .tooltip .tooltiptext::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container 
-  .tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
-  } 
-  */
