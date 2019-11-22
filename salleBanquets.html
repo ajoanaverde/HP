@@ -1,78 +1,99 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Poudlard | Salle Des Banquets</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <title>Poudlard | Salle Des Banquets</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stylesBS.css">
+	<link rel="stylesheet" href="https://www.dafont.com/fr/harry-p.font">
 </head>
 <body id="banquets">
-	<div id="home1" class="home homeEp">
+	<div id="home1" class="home homeEp"><!---->
 		<header id="header2">
 			<h1 class="titre">Poudlard</h1>
 			<h2 class="titre">Accueil Dans La Salle Des Banquets</h2>
 		</header>
 
-        <div class="grid-container" id="gridContainerEp">
-            <div class="grid-itemEp" id="gridItem1">
+        <div class="row" id="gridContainerEp"><!--grid-container-->
+            <div class="col-3" id="gridItem1"><!--grid-itemEp-->
                 <a href="https://www.pottermore.com">
                     Site officiel<br>pottermore.com
                 </a>
             </div>
-            <div class="grid-itemEp item2" id="gridItem2">
+            <div class="col-6 item2" id="gridItem2"><!--grid-itemEp-->
                 <figure class="video2">
-                        <figcaption class="videoEp">
-                            Bande annonce <span>Harry Potter à l'école des sorciers [Fr]</span>
-                        </figcaption>
+                    <figcaption class="videoEp">
+                        Bande annonce <span>Harry Potter à l'école des sorciers [Fr]</span>
+                    </figcaption>
                     <div id="videoEp">
                         <video id="videoAccueilBanquets" width="720" height="300" controls 
-                            source src="Harry Potter à l'école des Sorciers - Bande Annonce VF.mp4" type="video/mp4">
+                            source src="./vid/Harry Potter à l'école des Sorciers - Bande Annonce VF.mp4" type="video/mp4">
                             Texte alternatif
                         </video>
                     </div>
                 </figure>
             </div>
-            <div class="grid-itemEp" id="gridItem3">
+            <div class="col-3" id="gridItem3"><!--grid-itemEp-->
                     <a class="liensEp" id="gridItem31" href="ep2.html">Suis la visite</a>
                     <a class="liensEp" id="gridItem32" href="choixEp.html">Choisis un épisode</a>
             </div>
-            <div class="grid-itemEp" id="gridItem4">4</div>
-            <div class="grid-itemEp item2" id="gridItem5">5</div>
-            <div class="grid-itemEp" id="gridItem6">6</div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="gridItem4"><!--grid-itemEp-->
+                <h3 class="center">
+                    Bienvenue Nouvel élève de Poudlard !
+                </h3>
+                <p>
+                    Tu as reçu ta lettre d'inscription au collège Poudlard, le collège des sorciers. Tous les professeurs de Poudlard te souhaitent la bienvenue. Tu verras, Poudlard est comme une grande famille, même si les élèves sont répartis en 4 "Maisons".
+                </p><p>
+                    Poudlard a été construit par 4 grands sorciers : Godric Gryffondor, Salazar Serpentard, Rowena Serdaigle et Helga Poufsoufle. Mais aucun n'aurait pu le faire sans les 3 autres. C'est pour ça qu'au sein du collège, tous doivent être unis, quelle que soit sa Maison.
+                </p><p>
+                    Durant l'année scolaire, tous les cours sont obligatoires, mais vous aurez des sorties (la visite du village de Pré-au-Lard, par exemple), des fêtes au collège, et le tournoi de Quidditch. Le quidditch est le sport international des sorciers, évidemment on l epratique à Poudlard. Chaque Maiosn a son équipe, un tounroi est organisé au sein de l'école, et le vaiqueur participe au tournoi international qui se déroule à la fin de l'année scolaire, juste avant les BUS.
+                </p><p>
+                    Les BUS (Brevet Unitaire de Sorcellerie) valident votre année d'étude. Au cas où l'idée vous prendrait d'essayer de tricher aux examens, sachez que la sanction est l'exclusion définitive de l'éécole, et pour les 1è et 2è années, une condamnation par le Ministère de la Magie pour utilisation non autorisée de la magie hors de heures de cours.
+                </p><p class="center">
+                    Vous avez compris que les règles sont importantes ici à Poudlard, mais maintenant, place à la fête et au bon repas !<br>
+                    Encore bienvenue à tous et régalez-vous bien !
+                </p>
+            </div>
+            <!--div class="grid-itemEp item2" id="gridItem5">5</!--div>
+            <div-- class="grid-itemEp" id="gridItem6">6</div-->
         </div>
 
-        <div class="grid-container-emblemes" id="grid-container-emblemes">
-            <div class="grid-item-emblemes" id="gridItem7">
+        <div class="row" id="grid-container-emblemes"><!--grid-container-emblemes-->
+            <div class="col-3" id="gridItem7"><!--grid-item-emblemes-->
                 <h4 class="emblemes" id="gryff">
                     <a href="#">
                         <img src="emblemes/copie-GN.png" alt="Emblême Gryffindor" height="445px">
                     </a>
                 </h4>
             </div>
-            <div class="grid-item-emblemes" id="gridItem8">
+            <div class="col-3" id="gridItem8"><!--grid-item-emblemes-->
                 <a href="#">
                     <h4 class="emblemes" id="slyth">
                         <img src="emblemes/copie-SN.png" alt="Emblême Slytherin">
                     </h4>
                 </a>
             </div>  
-            <div class="grid-item-emblemes" id="gridItem9">
+            <div class="col-3" id="gridItem9"><!--grid-item-emblemes-->
                 <a href="#">
                     <h4 class="emblemes" id="huff">
                         <img src="emblemes/copie-RN.png" alt="Emblême Hufflepuff">
                     </h4>
                 </a>
             </div>
-            <div class="grid-item-emblemes" id="gridItem10">
+            <div class="col-3" id="gridItem10"><!--grid-item-emblemes-->
                 <a href="#">
                     <h4 class="emblemes" id="rav">
                         <img src="emblemes/copie-HN.png" alt="Emblême Ravenclaw">
                     </h4>
                 </a>
             </div>
-            <div class="grid-item" id="gridItem11">11</div>
-            <div class="grid-item" id="gridItem12">12</div>
-            <div class="grid-item" id="gridItem13">13</div>
-            <div class="grid-item" id="gridItem14">14</div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="gridItem11">11</div><!--grid-item-->
+            <div class="col-3" id="gridItem12">12</div>
+            <div class="col-3" id="gridItem13">13</div>
+            <div class="col-3" id="gridItem14">14</div>
         </div>
 
         <!--div id="video2">
@@ -82,11 +103,11 @@
             </video>
         </!--div -->
 
-
-		
-    
-    
-        <p>M</p>
+        <div id="boutik">
+            <figure>
+                
+            </figure>
+        </div>
         <p>M</p>
         <p>M</p>
         <p>M</p>
@@ -138,6 +159,9 @@
     <span class="tooltiptext">Si vous devez demander, jamais vous ne saurez. Si vous savez, il suffit de demander</span>
 </!-->
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

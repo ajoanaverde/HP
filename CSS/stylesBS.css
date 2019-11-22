@@ -1,0 +1,196 @@
+/*
+@font-face {
+	font-family: "HP";
+	src: url("/fonts/harryP.ttfF") format("truetype");
+}
+*/
+/**************************** general **************/
+
+:root {
+    --orange: #ff9027;
+	--blanc: #FCFEFC;
+}
+body {
+	margin: 0;
+	background-color: black;
+	font-family: "URW Chancery L", cursive;
+	color: white;
+/*	font-family: "HP";	*/
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;;
+}
+a:hover {
+	text-shadow: -2px 2px 3px var(--orange);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/***************** class ******************************/
+
+.center {
+	text-align:center;
+}
+
+
+/***************** #lang *****************************/
+
+.lang {
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/*************** index *******************/
+
+.home {
+    filter: grayscale(100%);
+    margin: 0;
+}
+#homeIndex {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 1100px;
+    min-width: 1900px;
+}
+.home:hover {
+    filter: grayscale(0);
+}
+
+header {
+    padding-top: 150px;
+    letter-spacing: .5em;
+}
+.titre1, #entree {
+    text-align: center;
+    position: relative;
+}
+h1.titre1 {
+    font-size: 10em; 
+    font-weight: bold;
+    top:20px;
+    margin-bottom: 10px;
+    letter-spacing: .8em;
+    text-shadow: -3px 3px 10px var(--orange);
+}
+h2.titre1 {
+    font-size: 5em; 
+    top:30px;
+    text-shadow: -3px 3px 10px var(--orange);
+}
+.titre1:hover {
+    filter: grayscale(0%);
+}
+
+/***************** #homeIndex ****************/
+
+#homeIndex {
+    background-image: url(../IMG/chateau-poudlard.jpg);
+	position: absolute;
+    top: 0;
+}
+
+.titre1, #entree {
+    text-align: center;
+    position: relative;
+}
+h1.titre1 {
+    font-size: 10em; 
+    font-weight: bold;
+    top:20px;
+    margin-bottom: 10px;
+    letter-spacing: .8em;
+    text-shadow: -3px 3px 10px var(--orange);
+}
+h2.titre1 {
+    font-size: 5em; 
+    top:30px;
+    text-shadow: -3px 3px 10px var(--orange);
+}
+.titre1:hover {
+    filter: grayscale(0%);
+}
+#audioIndex {
+    width: 200px;
+}
+#affIndice {
+    cursor: pointer;
+}
+#entree {
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: -1px 1px 3px white;
+    width: 250px;
+    height: 60px;
+    display: block;
+/*    margin: 100px auto 0 auto;    */
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 7px;
+    text-shadow: -1px 1px 3px var(--orange);
+    filter: grayscale(100%);
+}
+#entree a {
+    color: #060a25;
+}
+#entree:hover {
+	color: var(--blanc);
+    background-color: silver;
+    box-shadow: -1px 1px 3px var(--orange);
+    filter: grayscale(0%);
+}
+
+.audio {
+    margin-left: 100px;
+    letter-spacing: 0;
+    width: 300px;
+    height: 40px;
+}
+
+/****** animation chauve-souris *******************/
+
+div#animP1 {
+	height: 50px;
+}
+div#animP1 img {
+	width: 5%;
+	display: block;
+	margin-left: -100px;
+
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 7s; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 7s;
+	animation-delay: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+/*	animation-timing-function: steps(2);	*/
+  }
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+	from {margin-left: -100px;width: 5%;}
+	to {margin-left: 1540px;width: 1%;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+	from {margin-left: -100px;width: 5%;}
+	to {margin-left: 1540px;width: 0%;}
+  }
+/********** fin anim chauve-souris ********************/
+
+
+
+
+
+
+
+
+
+
