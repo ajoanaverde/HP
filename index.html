@@ -3,8 +3,8 @@
 	<meta charset="utf-8">
 	<title>Poudlard | Accueil</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./CSS/stylesBS.css">
 	<link rel="stylesheet" href="https://www.dafont.com/fr/harry-p.font">
+	<link rel="stylesheet" type="text/css" href="./CSS/stylesBS.css">
 </head>
 <body>
 	<div id="homeIndex" class="container home">
@@ -16,14 +16,14 @@
 		</!--div-->
 		<header>
 			<div class="row">
-				<h1 class="titre1 col-12">Poudlard</h1>
+				<h1 class="titre1 col-10 offset-1">Poudlard</h1>
 			</div>
 			<div class="row">
-				<h2 class="titre1 col-6 offset-3">Ecole De Sorcellerie</h2>
+				<h2 class="titre1 col-6 offset-3 my-3">Ecole De Sorcellerie</h2>
 			</div>
 			
 			<div id="animP1">
-				<img src="anim/chauveSouris.png" alt="animation chauve-souris">
+				<img src="./anim/chauveSourisOmbre.png" alt="animation chauve-souris">
 			</div>
 			<div class="row">
 				<audio id="audioIndex" class="col-3" controls autoplay="autoplay" loop>
@@ -31,22 +31,22 @@
 					<source src="./audio/Harry Potter and the Sorcerer's Stone Soundtrack - 01. Prologue.opus" type="audio/ogg">
 				</audio>
 			</div>
-			<div class="row">
-				<h4 id="affIndice" class="titre1 col-4 offset-4 my-3">
+			<div class="row bg-gris my-3">
+				<h3 id="affIndice" class="titre1 col-4 offset-4 my-3 bold">
 					Indice pour entrer
-				</h4>
-				<h4 id="indice" class="col-4 offset-4 my-3">
+				</h3>
+				<h3 id="indice" class="col-4 offset-4 my-3 bold">
 					Si vous devez demander, jamais vous ne saurez.<br>
-					Si vous savez, il suffit de demander.<br>
+					Si vous savez, il vous suffit de demander.<br>
 					(En minuscules : la...)<br>
 					<div id="inputRep" class="row">
 						<input class="my-3 col-5 mx-2" type="text" id="reponse" name="reponse">
 						<button id="btnReponse" class="my-3 offset-1 col-5 mx-2">Répondre</button>
 					</div>
 					<div id="mauvRep"></div>
-				</h4>
+				</h3>
 			</div>
-			<div class="row">
+			<div class="row my-3">
 				<div id="entree" class="col-2 offset-5">
 					<a href="salleBanquets.html">Entrée</a>
 				</div>
