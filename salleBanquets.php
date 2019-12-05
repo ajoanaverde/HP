@@ -94,49 +94,59 @@
                 <div class="col-3" id="gridItem7">
                     <h4 class="emblemes" id="gryff">
                         <a href="#">
-                            <img src="emblemes/copie-GN.png" alt="Emblême Gryffindor" height="445px">
+                            <img src="emblemes/gryph_final.png" alt="Emblême Gryffindor" height="445px">
                         </a>
                     </h4>
                 </div>
                 <div class="col-3" id="gridItem8">
                     <a href="#">
                         <h4 class="emblemes" id="slyth">
-                            <img src="emblemes/copie-SN.png" alt="Emblême Slytherin" height="445px">
+                            <img src="emblemes/slyth_final.png" alt="Emblême Slytherin" height="445px">
                         </h4>
                     </a>
                 </div>  
                 <div class="col-3" id="gridItem9">
                     <a href="#">
                         <h4 class="emblemes" id="huff">
-                            <img src="emblemes/copie-RN.png" alt="Emblême Hufflepuff" height="445px">
+                            <img src="emblemes/raven_final.png" alt="Emblême Hufflepuff" height="445px">
                         </h4>
                     </a>
                 </div>
                 <div class="col-3" id="gridItem10">
                     <a href="#">
                         <h4 class="emblemes" id="rav">
-                            <img src="emblemes/copie-HN.png" alt="Emblême Ravenclaw" height="445px">
+                            <img src="emblemes/huff_final.png" alt="Emblême Ravenclaw" height="445px">
                         </h4>
                     </a>
                 </div>
             </div>
 
-            <a href="boutik.html">
+            <a href="boutik.php">
                 <img id="enseigneBoutik" src="./IMG/copie-poudlardExpress4.png">
             </a>
-            <!--div-- id="boutik">
+
+            <div id="boutik">
+            <?php
+                $lines = file('exemple.txt');
+                $articles=array();
+                for ($x = 0; $x <=  count($lines)-1; $x++) {
+                    $articles[] = $lines[$x];
+                }
+                $num_art[]=array_chunk($articles,4);
+
+                foreach($num_art as $art) { ?>
                 <div class="row rayons">
                     <figure class="col-2">
-                        <img>
                         <figcaption class="btk">
-                            11
+                            <?= $art[1][1]; ?>
                         </figcaption>
+                        <img src="<?= $art[0][2]; ?>">
+                        <p><?= $art[0][3]; ?></p>
                     </figure>
                     <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            12
-                        </figcaption>
+                        <figcaption><?= $art[1][1]; ?></figcaption>
+                        <img src="<?= $art[1][2]; ?>">
+                        <p><?= $art[1][3]; ?></p>
                     </figure>
                     <figure class="col-3">
                         <img>
@@ -223,7 +233,8 @@
                         </figcaption>
                     </figure>
                 </div>
-            </!--div-->
+                <?php } ?>
+            </div>
             
 
             <!--div id="video2">
