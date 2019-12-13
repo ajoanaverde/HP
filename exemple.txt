@@ -1,9 +1,20 @@
 01
 Article 1
-./IMG/piocheIMG/chouette01.jpeg
-Cette chouette transportera vos courriers à travers le monde des sorciers plus vite qu'avec un Nimbus 2000 ! 
+./IMG/piocheIMG/test300x95ppp.png
+L'atout de cette chouette est sa petite taille : elle se faufile et accélère plus facilement que des plus grandes. 
+Animaux
 02
 Article 2
 ./IMG/piocheIMG/hibou01.jpeg
-Ce hibou d'une intelligence exceptionnelle...
+Ce hibou transportera vos courriers à travers le monde des sorciers plus vite qu'avec un Nimbus 2000 !
+Animaux
+03
+./IMG/piocheIMG/chouetteCacheCache.jpg
+Ce hibou d'une intelligence exceptionnelle pourra trier vos courrier.
+Animaux
+
+
+
+
+
 

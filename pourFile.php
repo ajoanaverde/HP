@@ -26,25 +26,62 @@ $articles=array();
 for ($x = 0; $x <=  count($lines)-1; $x++) {
     $articles[] = $lines[$x];
 }
-$num_art[]=array_chunk($articles,4);
+$num_art[]=array_chunk($articles,5);
 //print_r($num_art);
 
 foreach($num_art as $art) { ?>
-    <fugure>
+
+    <figure>
         <figcaption><?= $art[0][1]; ?></figcaption><br>
         <img src="<?= $art[0][2]; ?>" width="200px">
         <p style="width:200px"><?= $art[0][3]; ?></p>
-    </fugure>
+        <p style="width:200px" class="categ"><?= $art[0][4]; ?></p>
+        <div class="container" style="width: 200px">
+            <h2>Modal Example</h2>
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open modal
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal" style="width:600px">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">
+                    <figcaption><?= $art[0][1]; ?></figcaption></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img src="<?= $art[0][2]; ?>" width="200px">
+                        <p style="width:200px"><?= $art[0][3]; ?></p>
+                        <p style="width:200px" class="categ"><?= $art[0][4]; ?></p>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </figure>
     <figure>
         <figcaption><?= $art[1][1]; ?></figcaption><br>
         <img src="<?= $art[1][2]; ?>" width="200px">
         <p style="width:200px"><?= $art[1][3]; ?></p>
+        <p style="width:200px" class="categ"><?= $art[1][4]; ?></p>
     </figure>
+<?php   }   ?>
+
+
 <?php
-    //echo '<br><img src="'.$art[0][2].'">';
-}
-
-
 //  print_r($tableau);
 
 /*

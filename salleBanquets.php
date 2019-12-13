@@ -125,7 +125,7 @@
                 <img id="enseigneBoutik" src="./IMG/copie-poudlardExpress4.png">
             </a>
 
-            <div id="boutik">
+            <div id="prezBoutik">
             <?php
                 $lines = file('exemple.txt');
                 $articles=array();
