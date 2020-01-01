@@ -1,0 +1,330 @@
+/*
+@font-face {
+	font-family: "HP";
+	src: url("/fonts/harryP.ttfF") format("truetype");
+}
+*/
+/**************************** general **************/
+
+:root {
+    --orange: #ff9027;
+    --blanc: #FCFEFC;
+    --bleuFonce: #0F1F37;
+}
+body {
+	margin: 0;
+	background-color: black;
+	font-family: "URW Chancery L", cursive;
+	color: white;
+/*	font-family: "HP";	*/
+    font-size: 1.9em;
+}
+p {
+    line-height: 1.3em;
+}
+a {
+	text-decoration: none;
+	color: var(--blanc);
+	font-weight: bold;
+}
+a:hover {
+	text-shadow: -2px 2px 3px var(--orange);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--blanc);
+}
+img {
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.1em;
+}
+
+
+/***************** class ******************************/
+
+.bold {
+    font-weight: bold;
+}
+.center {
+	text-align:center;
+}
+.bg-gris {
+    background-color: rgba(15,31,55,.7);
+}
+.bg-gris4 {
+    background-color: rgba(15,31,55,.4);
+}
+.cap {
+    text-transform: capitalize;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+.rayons {
+    text-align: center;
+}
+
+
+
+
+
+
+/***************** #lang *****************************/
+
+.lang {
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/***************** #homeIndex ****************/
+
+.home {
+    filter: grayscale(100%);
+    margin: 0;
+}
+#homeIndex {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 1100px;
+    min-width: 1900px;
+}
+.home:hover {
+    filter: grayscale(0);
+}
+
+header {
+    padding-top: 150px;
+    letter-spacing: .5em;
+}
+h1.titre1 {
+    font-size: 5em;
+    font-weight: bold;
+    top:20px;
+    margin-bottom: 10px;
+    letter-spacing: .8em;
+    text-shadow: -3px 3px 10px var(--orange);
+}
+h2.titre1 {
+    font-size: 3em; 
+    top:30px;
+    text-shadow: -3px 3px 10px var(--orange);
+}
+.titre1:hover {
+    filter: grayscale(0%);
+}
+#homeIndex {
+    background-image: url(../IMG/chateau-poudlard.jpg);
+	position: absolute;
+    top: 0;
+}
+
+.titre1, #entree {
+    text-align: center;
+    position: relative;
+}
+
+#audioIndex {
+    width: 200px;
+}
+#affIndice {
+    cursor: pointer;
+}
+#entree {
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: -1px 1px 3px white;
+    width: 250px;
+    height: 60px;
+    display: block;
+/*    margin: 100px auto 0 auto;    */
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 7px;
+    text-shadow: -1px 1px 3px var(--orange);
+    filter: grayscale(100%);
+}
+#entree a {
+    color: #060a25;
+}
+#entree:hover {
+	color: var(--blanc);
+    background-color: silver;
+    box-shadow: -1px 1px 3px var(--orange);
+    filter: grayscale(0%);
+}
+
+.audio {
+    margin-left: 100px;
+    letter-spacing: 0;
+    width: 300px;
+    height: 40px;
+}
+
+/****** animation chauve-souris *******************/
+
+div#animP1 {
+	height: 50px;
+}
+div#animP1 img {
+	width: 5%;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+	margin-left: -250px;
+
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 7s; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 7s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+/*	animation-timing-function: steps(2);	*/
+}
+  
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+	from {margin-left: -250px;width: 5%;}
+	to {margin-left: 1540px;width: 1%;}
+}
+  
+  /* Standard syntax */
+@keyframes example {
+	from {margin-left: -250px;width: 5%;}
+	to {margin-left: 1540px;width: 0%;}
+}
+/********** fin anim chauve-souris ********************/
+
+
+/********** pages épisodes ******************/
+
+
+h1.titre {
+	margin-top: 0;
+	font-size: 5em;
+	letter-spacing: .5em;
+	text-shadow: -2px 2px 3px #ff9027;
+}
+h2.titre {
+	font-size: 3em;
+	margin-top: 100px;
+	margin-bottom: 150px;
+	text-shadow: -2px 2px 3px #ff9027;
+}
+h1, h2 {
+	text-align: center;
+}
+
+#carouselEp {
+    text-align: center;
+}
+#siteOff {
+    line-height: 150%;
+    padding-top: 200px;
+}
+#videoEp {
+	margin: 10px auto;
+	width: 720px;
+}
+.videoEp span {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: .6em;	
+}
+figcaption {
+	letter-spacing: .1em;
+	margin-bottom: 50px;
+}
+figcaption span {
+	text-decoration: underline;
+}
+
+#liensEp .row {
+    padding-top: 130px;
+}
+
+#PrezEpisode {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+#PrezEpisode h2 {
+    margin-bottom: 50px;
+}
+
+#entreesMaisons img {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#enseigneBoutik {
+/*    opacity: .4;      */
+    margin: 0 auto;
+    height: 400px;
+}
+#enseigneBoutik:hover {
+    box-shadow: var(--orange) -3px 2px 5px;
+}
+
+
+
+
+/********* salleBanquets.html ********************/
+
+#home1 {
+	height: 1450px;
+	background-image: url(../IMG/Grande_Salle.jpg);	
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: 100px;
+	background-size: auto;
+}
+
+
+
+
+
+
+
+/************* salle Secrets ***************************/
+body#secrets {
+	background-image: url("IMG/porteChambreSecrets-1920px.jpg");	
+	background-repeat: no-repeat;	
+}
+
+
+
+
+/***************** #boutik *************/
+
+#boutik {
+    width:80%;
+    margin:auto;
+    margin-top: 100px;
+}
+#boutik .rayons:first-of-type {
+    margin:100px auto;
+    margin-bottom: 0;
+}
+#boutik .rayons {
+    margin:10px auto;
+}
+#boutik .rayons:last-of-type {
+    margin:100px auto;
+    margin-top: 0;
+}
+#boutik figure {
+    border:var(--blanc) 2px inset;
+    margin:10px;
+}
+
+
+
+
+
+
+

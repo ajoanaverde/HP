@@ -1,0 +1,100 @@
+img#enseigneBoutik {
+    width: 800px;
+    margin:0 auto;
+    padding-top: 20px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+#boutik .rayons:first-of-type {
+    margin:100px auto;
+    margin-bottom: 0;
+}
+
+#boutik .rayons {
+    margin:10px auto;
+}
+
+#boutik .rayons:last-of-type {
+    margin:100px auto;
+    margin-top: 0;
+}
+
+#boutik figure {
+    border:var(--blanc) 2px inset;
+    margin:10px;
+    background-color: var(--grisBoutik);
+}
+
+#boutik figure img {
+    width: 90%;
+    margin:20px auto;
+}
+#boutik figure figcaption {
+    font-weight: bold;
+}
+#boutik figure p {
+    font-size: 0.8em;
+}
+
+/******************* #boutik modal *************************/
+#boutik .modal {
+    position: absolute;
+    top: -250px;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 800px;
+    overflow-y: scroll;
+    outline: 0;
+}
+#boutik #myModal {
+    width:700px;
+    height: 700px;
+}
+#boutik .modal-content {
+    background-color: var(--grisBoutik);
+}
+#boutik .modal-dialog {
+    max-width: 700px;
+    margin: 0;
+    padding-right: 0;
+    height: 700px;
+}
+#boutik .modal-content p {
+    width:95%;
+    margin:0 auto
+}
+#boutik .modal-backdrop {
+    z-index:-1!important;
+}
+
+#boutik .modal-header .close {
+    color: white;
+}
+
+/******************** fin #boutik modal ************************/
+
+div#homebtk {
+    background-image: url('../IMG/piocheIMG/vitrine2.jpeg');
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+/*    background-attachment: fixed;     */
+    background-size: cover;
+/*    background-position: top center;  */
+    background-color: var(--grisBoutik);
+}
+#bgBoutik {
+/*    min-height: 2000px;   */
+}
+#homebtk .rayons:first-of-type {
+    margin-top: 600px;
+}
+#boutik .categ {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
