@@ -13,18 +13,17 @@ class LocalVisite{
 	public function check_head(){
         $this->a = $_SERVER["REQUEST_URI"];
         $this->b = explode("/", $this->a);
-
         switch ($this->a) {
-			case 'index.php':
+			case '/HP/VUE/index.php':
 				echo '<title>Accueil | L\'univers d\'Harry Potter</title>';
 				break;
-            case 'salleBanquets.php':
+            case '/HP/VUE/salleBanquets.php':
                 echo '<title>L\'école des sorciers | L\'univers d\'Harry Potter</title>';
                 break;
-			case 'ep2.php':
+			case '/HP/VUE/ep2.php':
 			    echo '<title>La chambre des secrets | L\'univers d\'Harry Potter</title>';
 				break;
-			case 'boutik.php':
+			case '/HP/VUE/boutik.php':
 				echo '<title>La boutique de souvenirs | L\'univers d\'Harry Potter</title>';
 				break;
 			default :
@@ -36,17 +35,17 @@ class LocalVisite{
         $this->b = explode("/", $this->a);
 //        var_dump($this->b[4]);
         switch ($this->a){
-			case 'index.php':
+			case '/HP/VUE/index.php':
 				echo 'Ecole De Sorcellerie';
                 break;
-			case 'salleBanquets.php':
+			case '/HP/VUE/salleBanquets.php':
 			    echo 'Accueil Dans La Salle Des Banquets';
                 break;
-            case 'ep2.php':
+            case '/HP/VUE/ep2.php':
                 echo 'La chambre des secrets';
                 break;
-            case 'boutik.php':
-                echo 'Bienvenue à la boutique de souvenirs Dervish & Banges';
+            case '/HP/VUE/boutik.php':
+                echo 'Bienvenue à la boutique de souvenirs<br>Dervish & Banges';
 				break;
 			default :
 				echo 'Erreur 404';

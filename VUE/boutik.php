@@ -4,12 +4,13 @@
 <body id="boutik">
 <div id="homebtk" class="home">
     <div id="bgBoutik" class="bg-gris4 row">
-    <?php
+        <?php
+        //$_SERVER['REQUEST_URI']; 
         include_once('./INC/entete.php');
     ?>
-        <div class="col-10 offset-1">
+        <div id="main-btk" class="col-10 offset-1">
         <?php
-            $lines = file('exemple.txt');
+            $lines = file('../exemple.txt');
             $articles=array();
             for ($x = 0; $x <=  count($lines)-1; $x++) {
                 $articles[] = $lines[$x];
@@ -24,11 +25,11 @@
                     </figcaption>
                     <div class="container">
                         <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-1">
                             Voir
                         </button>
                         <!-- The Modal -->
-                        <div class="modal" id="myModal">
+                        <div class="modal" id="art-1">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 
@@ -66,11 +67,11 @@
                     </figcaption>
                     <div class="container">
                         <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#myModal">
+                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-2">
                             Voir
                         </button>
                         <!-- The Modal -->
-                        <div class="modal" id="myModal" style="width:600px">
+                        <div class="modal" id="art-2" style="width:600px">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 
@@ -104,11 +105,49 @@
                     <p class="categ"><?= $art[1][4]; ?></p>
                 </figure>
                 
-                <figure class="col-3">
-                    <img>
+                <figure class="col-2">
                     <figcaption class="btk">
-                        13
+                        <?= $art[2][1]; ?>
                     </figcaption>
+                    <div class="container">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-3">
+                            Voir
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="art-3" style="width:600px">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">
+                                            <figcaption>
+                                                <?= $art[2][1]; ?>
+                                            </figcaption>
+                                        </h4>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            &times;
+                                        </button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <img src="<?= $art[2][2]; ?>" width="200px">
+                                        </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="<?= $art[2][2]; ?>">
+                    <p class="left"><?= $art[2][3]; ?></p>
+                    <p class="categ"><?= $art[2][4]; ?></p>
                 </figure>
                 <figure class="col-2">
                     <img>
@@ -197,6 +236,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+
 </body>
 </html>

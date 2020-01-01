@@ -5,7 +5,12 @@ img#enseigneBoutik {
     display: block;
     margin-bottom: 100px;
 }
-
+#boutik #header2 {
+    width: 95%;
+}
+#boutik #main-btk {
+    margin-top: 50px;
+}
 #boutik .rayons:first-of-type {
     margin:100px auto;
     margin-bottom: 0;
@@ -48,7 +53,7 @@ img#enseigneBoutik {
     overflow-y: scroll;
     outline: 0;
 }
-#boutik #myModal {
+#boutik .modal {
     width:700px;
     height: 700px;
 }
@@ -87,9 +92,7 @@ div#homebtk {
 #bgBoutik {
 /*    min-height: 2000px;   */
 }
-#homebtk .rayons:first-of-type {
-    margin-top: 600px;
-}
+
 #boutik .categ {
     font-weight: bold;
     text-align: center;

@@ -29,14 +29,7 @@
 		</audio>
 
 	</div>
-
-
-
-<!--form action="salleDeBanquet.php" id="formEntree" method="GET">
-	<label for="motDePasse">Donnez le mot de passe :</label>
-	<input type="password" name="motDePasse" id="motDePasse"><br>
-	<button type="submit" name="entrer" id="entrer">Tentez d'entrer</button>
-</!--form -->
+	<script src="./JS/hp.js"></script>
 </body>
 </html>
 

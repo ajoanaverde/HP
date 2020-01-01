@@ -1,0 +1,15 @@
+01
+Chouette 1
+./IMG/piocheIMG/test300x95ppp.png
+Peluche d'Edwige, 20cm
+Animaux
+02
+Hibou 2
+./IMG/piocheIMG/hibou01.jpeg
+Peluche de hibou, 15cm
+Animaux
+03
+Hibou 3
+./IMG/piocheIMG/Capture-hiboux2.png
+Peluche de hibou, 20cm
+Animaux
