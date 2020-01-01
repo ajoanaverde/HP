@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-    <title>Poudlard | Salle Des Banquets</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.dafont.com/fr/harry-p.font">
-    <link rel="stylesheet" type="text/css" href="./CSS/stylesBS.css">
-</head>
+<?php
+    include_once('./INC/head.php');
+?>
 <body id="banquets">
 	<div id="home1" class="home homeEp">
         <div class="bg-gris4">
-            <header id="header2">
-                <div  class="row">
-                    <h1 class="titre col-12">Poudlard</h1>
-                </div>
-                <div class="row">
-                    <h2 class="titre col-10 offset-1">Accueil Dans La Salle Des Banquets</h2>
-                </div>
-            </header>
-
+            <?php
+                include_once('./INC/entete.php');
+            ?>
             <div class="row mb-10" id="carouselEp">
                 <div class="col-3" id="siteOff">
                     <a href="https://www.pottermore.com">

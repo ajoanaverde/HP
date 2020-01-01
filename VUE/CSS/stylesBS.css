@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 .center {
 	text-align:center;
 }
+.uline {
+    text-decoration: underline;
+}
 .bg-gris {
     background-color: rgba(15,31,55,.7);
 }
@@ -67,6 +70,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .mb-10 {
     margin-bottom: 10rem;
+}
+.my-5 {
+    margin:5em auto;
 }
 .left {
     text-align: left;
@@ -89,10 +95,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 #homeIndex {
     background-size: cover;
-    background-position: top;
+/*    background-position: top; */
+    background-position: top center;
     background-repeat: no-repeat;
     min-height: 1100px;
-    min-width: 1900px;
+/*    min-width: 1900px;    */
+    min-width: 1690px;
 }
 .home:hover {
     filter: grayscale(0);

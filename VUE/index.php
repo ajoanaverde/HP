@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<title>Poudlard | Accueil</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="https://www.dafont.com/fr/harry-p.font">
-</head>
+<?php
+	include_once('./INC/head.php');
+?>
+
 <body>
 	<div id="homeIndex" class="home">
 		<div class="lang">
@@ -24,8 +21,6 @@
 			<!-- h4 class="titre1 tooltip">Indice pour entrer
 				<span class="tooltiptext">Si vous devez demander, jamais vous ne saurez. Si vous savez, il suffit de demander</span>
 			</!-->
-			
-			
 		</header>
 
 		<audio controls autoplay="autoplay" loop>

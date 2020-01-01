@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Poudlard | Accueil</title>
+	<title>Poudlard | Erreur de page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://www.dafont.com/fr/harry-p.font">
-	<link rel="stylesheet" type="text/css" href="./CSS/stylesBS.css">
+	<link rel="stylesheet" type="text/css" href="./VUE/CSS/stylesBS.css">
 </head>
 <body>
 	<div id="homeIndex" class="container home">
@@ -22,38 +22,15 @@
 				<h2 class="titre1 col-6 offset-3 my-3">Ecole De Sorcellerie</h2>
 			</div>
 			
-			<div id="animP1">
-				<img src="./anim/chauveSourisOmbre.png" alt="animation chauve-souris">
+			<div class="row bg-gris my-5">
+				<h4 class="titre1 col-4 offset-4 my-3 bold">
+					La page demandée est partie se promener.<br>
+					Merci de retourner à la <span class="uline"><a href="javascript:history.back()">page précédente</a></span> :
+				</h4>
 			</div>
-			<div class="row">
-				<audio id="audioIndex" class="col-3" controls autoplay="autoplay" loop>
-					<source src="./audio/Harry Potter and the Sorcerer's Stone Soundtrack - 01. Prologue.m4a" type="audio/mpeg">
-					<source src="./audio/Harry Potter and the Sorcerer's Stone Soundtrack - 01. Prologue.opus" type="audio/ogg">
-				</audio>
-			</div>
-			<div class="row bg-gris my-3">
-				<h3 id="affIndice" class="titre1 col-4 offset-4 my-3 bold">
-					Indice pour entrer
-				</h3>
-				<h3 id="indice" class="col-4 offset-4 my-3 bold">
-					Si vous devez demander, jamais vous ne saurez.<br>
-					Si vous savez, il vous suffit de demander.<br>
-					(En minuscules : la...)<br>
-					<div id="inputRep" class="row">
-						<input class="my-3 col-5 mx-2" type="text" id="reponse" name="reponse">
-						<button id="btnReponse" class="my-3 offset-1 col-5 mx-2">Répondre</button>
-					</div>
-					<div id="mauvRep"></div>
-				</h3>
-			</div>
-			<div class="row my-3">
-				<div id="entree" class="col-2 offset-5">
-					<a href="salleBanquets.html">Entrée</a>
-				</div>
-			</div>
-			
-			
 		</header>
+		
+		
 
 		
 	</div>
