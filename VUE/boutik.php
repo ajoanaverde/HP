@@ -9,25 +9,32 @@
         include_once('./INC/entete.php');
     ?>
         <div id="main-btk" class="col-10 offset-1">
+            <div class="row rayons">
         <?php
-            $lines = file('../exemple.txt');
+            $lines = file('exemple.txt');
             $articles=array();
             for ($x = 0; $x <=  count($lines)-1; $x++) {
                 $articles[] = $lines[$x];
             }
             $num_art[]=array_chunk($articles,5);
-
-            foreach($num_art as $art) { ?>
-            <div class="row rayons">
+            //print_r($num_art);
+            
+            foreach($num_art as $art) { ?> ?>
                 <figure class="col-2">
                     <figcaption class="btk">
                         <?= $art[0][1]; ?>
                     </figcaption>
                     <div class="container">
                         <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-1">
+                        <a href="localhost/HP/VUE/boutik.php?id=a-<?= $x ?>" 
+                        target="_blank" rel="noopener noreferrer">
                             Voir
-                        </button>
+                        </a>
+                        <form action="localhost/HP/VUE/boutik.php?id=a-<?= $x ?>" method="get" target="_blank">
+                            <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-1">
+                                Voir
+                            </button>
+                        </form>
                         <!-- The Modal -->
                         <div class="modal" id="art-1">
                             <div class="modal-dialog">
