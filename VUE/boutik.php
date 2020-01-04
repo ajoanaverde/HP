@@ -13,28 +13,28 @@
         <?php
             $lines = file('exemple.txt');
             $articles=array();
-            for ($x = 0; $x <=  count($lines)-1; $x++) {
+            for ($x = 0; $x < count($lines); $x++) {
                 $articles[] = $lines[$x];
             }
             $num_art[]=array_chunk($articles,5);
-            //print_r($num_art);
-            
-            foreach($num_art as $art) { ?> ?>
+            foreach($num_art as $art) {
+                for($x=0;$x<count($articles);$x++) {     ?>
+                
                 <figure class="col-2">
                     <figcaption class="btk">
-                        <?= $art[0][1]; ?>
+                        <?= $art[$x][1] ?>
                     </figcaption>
                     <div class="container">
                         <!-- Button to Open the Modal -->
-                        <a href="localhost/HP/VUE/boutik.php?id=a-<?= $x ?>" 
+                        <a href="localhost/HP/VUE/boutik.php?id=a-<?= ($x+1) ?>" 
                         target="_blank" rel="noopener noreferrer">
                             Voir
-                        </a>
+                        </a>    <?php   /*
                         <form action="localhost/HP/VUE/boutik.php?id=a-<?= $x ?>" method="get" target="_blank">
                             <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-1">
                                 Voir
                             </button>
-                        </form>
+                        </form>     */  ?>
                         <!-- The Modal -->
                         <div class="modal" id="art-1">
                             <div class="modal-dialog">
@@ -44,92 +44,7 @@
                                     <div class="modal-header">
                                         <h4 class="modal-title">
                                             <figcaption>
-                                                <?= $art[0][1]; ?>
-                                            </figcaption>
-                                        </h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <img src="<?= $art[0][2]; ?>" width="200px">
-                                    </div>
-                                    
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="<?= $art[0][2]; ?>">
-                    <p class="left"><?= $art[0][3]; ?></p>
-                    <p class="categ"><?= $art[0][4]; ?></p>
-                </figure>
-
-                <figure class="col-2">
-                    <figcaption class="btk">
-                        <?= $art[1][1]; ?>
-                    </figcaption>
-                    <div class="container">
-                        <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-2">
-                            Voir
-                        </button>
-                        <!-- The Modal -->
-                        <div class="modal" id="art-2" style="width:600px">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">
-                                            <figcaption>
-                                                <?= $art[1][1]; ?>
-                                            </figcaption>
-                                        </h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <img src="<?= $art[1][2]; ?>" width="200px">
-                                        </div>
-                                    
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="<?= $art[1][2]; ?>">
-                    <p class="left"><?= $art[1][3]; ?></p>
-                    <p class="categ"><?= $art[1][4]; ?></p>
-                </figure>
-                
-                <figure class="col-2">
-                    <figcaption class="btk">
-                        <?= $art[2][1]; ?>
-                    </figcaption>
-                    <div class="container">
-                        <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary bold" data-toggle="modal" data-target="#art-3">
-                            Voir
-                        </button>
-                        <!-- The Modal -->
-                        <div class="modal" id="art-3" style="width:600px">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">
-                                            <figcaption>
-                                                <?= $art[2][1]; ?>
+                                                <?=$art[$x][1];?>
                                             </figcaption>
                                         </h4>
                                         <button type="button" class="close" data-dismiss="modal">
@@ -139,8 +54,8 @@
                                     
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <img src="<?= $art[2][2]; ?>" width="200px">
-                                        </div>
+                                        <img src="<?=$art[$x][2];?>" width="200px">
+                                    </div>
                                     
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
@@ -152,90 +67,14 @@
                             </div>
                         </div>
                     </div>
-                    <img src="<?= $art[2][2]; ?>">
-                    <p class="left"><?= $art[2][3]; ?></p>
-                    <p class="categ"><?= $art[2][4]; ?></p>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        14
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        15
-                    </figcaption>
-                </figure>
+                    <img src="<?=$art[$x][2];?>">
+                    <p class="left"><?= $art[$x][3]; ?></p>
+                    <p class="categ"><?= $art[$x][4]; ?></p>
+                </figure>       <?php
+                }
+            }     ?>
+
             </div>
-
-            <!--div class="row rayons">
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        16
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        17
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        18
-                    </figcaption>
-                </figure>
-                <figure class="col-3">
-                    <img>
-                    <figcaption class="btk">
-                        19
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        20
-                    </figcaption>
-                </figure>
-            </!--div>
-
-            <div-- class="row rayons">
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        21
-                    </figcaption>
-                </figure>
-                <figure class="col-3">
-                    <img>
-                    <figcaption class="btk">
-                        22
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        23
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        24
-                    </figcaption>
-                </figure>
-                <figure class="col-2">
-                    <img>
-                    <figcaption class="btk">
-                        25
-                    </figcaption>
-                </figure>
-            </div-->
-        <?php } ?>
         </div>
     </div>
 </div>
