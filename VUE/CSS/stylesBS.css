@@ -135,7 +135,10 @@ h2.titre1 {
     text-align: center;
     position: relative;
 }
-
+audio {
+    width: 400px;
+    margin-left: 500px;
+}
 #audioIndex {
     width: 200px;
 }

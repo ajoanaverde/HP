@@ -2,16 +2,22 @@
 /* cacher indice, input réponse, bouton envoi réponse et bouton 
 entrée au chargement de la page
 */
-let $indice=$('#entree');
+/*
+let $titre=$('titre');
+$titre.html('index');
+*/
+//let $indice=$('#entree');
 let $affIndice=$('#affIndice');
 $entree=$('#entree');
 $indice=$('#indice');
 
+//$affIndice.show();
 $entree.hide();
 $indice.hide();
 
 $affIndice.click(function(){
     $indice.show();
+    $affIndice.hide();
 });
 
 let $repAttendue='salle sur demande';
@@ -23,13 +29,16 @@ let $mauvRep=$('#mauvRep');
 $("#btnReponse").click(function(){
     let $str = $reponse.val();
     if($str==$repAttendue) {
-        $affIndice.hide();
-        $indice.html('la '+$str+'<h3 class="bold">Bienvenue à Poudlard</h3>');
+//        $affIndice.hide();
+        $indice.html('la <span class="bold">'+$str+'</span><br><h3 class="bold">Bienvenue à Poudlard</h3>');
         $entree.show();
     } else {
-        $mauvRep.text('Mauvaise réponse, relis bien l\'indice');
-        $affIndice.hide();
         $indice.show();
+        $indice.html($indice+'<p>Mauvaise réponse, relis bien l\'indice</p>');
+
+//        $mauvRep.text('Mauvaise réponse, relis bien l\'indice');
+//        $affIndice.hide();
+        
         $('#inputRep').show();
     }
 });

@@ -83,6 +83,7 @@ echo isset($tab_recup['titi']) ? $tab_recup['titi'] : '';
         </figure>
     </div>
 </div>
+    <?php } ?>
 
 /***************    brouillons pourFile  *************/
 <?php
