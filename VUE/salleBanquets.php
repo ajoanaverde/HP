@@ -115,114 +115,29 @@
             </a>
 
             <div id="prezBoutik">
-            <?php
-                $lines = file('exemple.txt');
-                $articles=array();
-                for ($x = 0; $x <=  count($lines)-1; $x++) {
-                    $articles[] = $lines[$x];
-                }
-                $num_art[]=array_chunk($articles,4);
-
-                foreach($num_art as $art) { ?>
                 <div class="row rayons">
-                    <figure class="col-2">
-                        <figcaption class="btk">
-                            <?= $art[1][1]; ?>
-                        </figcaption>
-                        <img src="<?= $art[0][2]; ?>">
-                        <p><?= $art[0][3]; ?></p>
-                    </figure>
-                    <figure class="col-2">
-                        <figcaption><?= $art[1][1]; ?></figcaption>
-                        <img src="<?= $art[1][2]; ?>">
-                        <p><?= $art[1][3]; ?></p>
-                    </figure>
-                    <figure class="col-3">
-                        <img>
-                        <figcaption class="btk">
-                            13
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            14
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            15
-                        </figcaption>
-                    </figure>
+                <?php
+            $lines = file('exemple.txt');
+            $num_art[]=array_chunk($lines,5);
+            $test=(count($lines)/5);    ?>
+            <div class="row">
+                <?php
+            foreach($num_art as $art) {
+                for($x=0;$x<$test;$x++) {     ?>
+                
+                <figure class="col-2">
+                    <figcaption class="btk">
+                        <?= $art[$x][1] ?>
+                    </figcaption>
+                    
+                    <img src="<?=$art[$x][2];?>">
+                    <p class="left"><?= $art[$x][3]; ?></p>
+                    <p class="categ"><?= $art[$x][4]; ?></p>
+                </figure>       <?php
+                }
+            }     ?>
                 </div>
     
-                <div class="row rayons">
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            16
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            17
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            18
-                        </figcaption>
-                    </figure>
-                    <figure class="col-3">
-                        <img>
-                        <figcaption class="btk">
-                            19
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            20
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="row rayons">
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            21
-                        </figcaption>
-                    </figure>
-                    <figure class="col-3">
-                        <img>
-                        <figcaption class="btk">
-                            22
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            23
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            24
-                        </figcaption>
-                    </figure>
-                    <figure class="col-2">
-                        <img>
-                        <figcaption class="btk">
-                            25
-                        </figcaption>
-                    </figure>
-                </div>
-                <?php } ?>
             </div>
             
 

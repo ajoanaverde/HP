@@ -18,14 +18,12 @@
 
 //  200104
 $lines = file('exemple.txt');
-$articles=array();
-for ($x = 0; $x < count($lines); $x++) {
-    $articles[] = $lines[$x];
-}
-$num_art[]=array_chunk($articles,5);    ?>
-<div class="row">     <?php
+$num_art[]=array_chunk($lines,5);
+$test=(count($lines)/5);    ?>
+<div class="row">
+    <?php
 foreach($num_art as $art) {
-    for($x=0;$x<count($articles);$x++) {     ?>
+    for($x=0;$x<$test;$x++) {     ?>
     <figure class="col-2 offset-1 mx-3">
         <p>article N°<?=$art[$x][0]?></p>
         <figcaption><?=$art[$x][1]?></figcaption>

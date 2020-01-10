@@ -45,6 +45,9 @@ img {
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.1em;
 }
+h2 {
+    font-size: 1.2em;
+}
 
 
 /***************** class ******************************/
@@ -150,6 +153,7 @@ audio {
 #indice {
     background-color: rgba(15, 31, 55, .8);
 /*    background-color: var(--bleuFonce);   */
+    padding: 10px;
 }
 #entree {
     background-color: grey;
@@ -158,13 +162,16 @@ audio {
     width: 250px;
     height: 60px;
     display: block;
-/*    margin: 100px auto 0 auto;    */
     text-align: center;
     font-size: 1.8em;
     font-weight: bold;
-    padding: 7px;
+/*    padding: 7px;     */
     text-shadow: -1px 1px 3px var(--orange);
-    filter: grayscale(100%);
+/*    filter: grayscale(100%);      */
+/*    display: block;     */
+    margin: 20px auto;
+/*    padding: 0;       */
+/*    -webkit-filter: grayscale(100%);      */
 }
 #entree a {
     color: #060a25;

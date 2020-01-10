@@ -25,6 +25,7 @@ $affIndice.click(function(){
 let $repAttendue='salle sur demande';
 let $reponse=$('#reponse');
 let $mauvRep=$('#mauvRep');
+let $inputRep=$('#inputRep');
 //let $btnReponse=$('#btnReponse');
 //let $valeurInput=$reponse.val();
 //$mauvRep.hide();
@@ -34,12 +35,13 @@ $("#btnReponse").click(function(){
 //        $affIndice.hide();
         $indice.html('la <span class="bold">'+$str+'</span><br><h3 class="bold">Bienvenue à Poudlard</h3>');
         $entree.show();
+        $inputRep="";
+        $inputRep.hide();
     } else {
 //        $indice.show();
         $mauvRep.text('Mauvaise réponse, relis bien l\'indice');
 //        $affIndice.hide();
-        
-        $('#inputRep').show();
+        $inputRep.show();
     }
 });
 
