@@ -15,7 +15,7 @@ fond #boutik : #677264
     --orange: #ff9027;
     --blanc: #FCFEFC;
     --bleuFonce: #0F1F37;
-    --grisBoutik: #475450;
+    --grisBoutik: #020202;
 }
 body {
 	margin: 0;
@@ -137,13 +137,19 @@ h2.titre1 {
 }
 audio {
     width: 400px;
-    margin-left: 500px;
+/*    margin-left: 500px;   */
+    margin:20px auto;
+    display: block;
 }
 #audioIndex {
     width: 200px;
 }
 #affIndice {
     cursor: pointer;
+}
+#indice {
+    background-color: rgba(15, 31, 55, .8);
+/*    background-color: var(--bleuFonce);   */
 }
 #entree {
     background-color: grey;

@@ -22,18 +22,24 @@
 				<source src="./audio/Harry Potter and the Sorcerer's Stone Soundtrack - 01. Prologue.opus" type="audio/ogg">
 			</audio>
 			
-			<h3 id="affIndice" class="titre1">
-				Indice pour entrer
-			</h3>
+			<!--h2-- id="affIndice" class="titre1">
+				
+			</!--h2-->
 			<h3 id="indice" class="text-center">
+				<p>
+					Indice pour entrer
+				</p>
 				<p>
 					"Si vous devez demander, jamais vous ne saurez.<br>
 					Si vous savez, il vous suffit de demander"
 				</p><p>
-					(La... tout en minuscule)
+					(La ... tout en minuscule)
 				</p><p id="inputRep">
 					<input type="text" name="reponse" id="reponse">
 					<button id="btnReponse">Envoyer la réponse</button>
+				</p>
+				<p id="mauvRep">
+					
 				</p>
 
 			</h3>

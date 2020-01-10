@@ -13,19 +13,21 @@ $indice=$('#indice');
 
 //$affIndice.show();
 $entree.hide();
-$indice.hide();
+//  $indice.hide();
 
+/*
 $affIndice.click(function(){
     $indice.show();
     $affIndice.hide();
 });
+*/
 
 let $repAttendue='salle sur demande';
 let $reponse=$('#reponse');
 let $mauvRep=$('#mauvRep');
 //let $btnReponse=$('#btnReponse');
 //let $valeurInput=$reponse.val();
-
+//$mauvRep.hide();
 $("#btnReponse").click(function(){
     let $str = $reponse.val();
     if($str==$repAttendue) {
@@ -33,10 +35,8 @@ $("#btnReponse").click(function(){
         $indice.html('la <span class="bold">'+$str+'</span><br><h3 class="bold">Bienvenue à Poudlard</h3>');
         $entree.show();
     } else {
-        $indice.show();
-        $indice.html($indice+'<p>Mauvaise réponse, relis bien l\'indice</p>');
-
-//        $mauvRep.text('Mauvaise réponse, relis bien l\'indice');
+//        $indice.show();
+        $mauvRep.text('Mauvaise réponse, relis bien l\'indice');
 //        $affIndice.hide();
         
         $('#inputRep').show();
