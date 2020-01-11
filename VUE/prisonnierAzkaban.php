@@ -1,8 +1,8 @@
 <?php
     include_once('./INC/head.php');
 ?>
-<body id="banquets">
-	<div id="home1" class="home homeEp">
+<body id="secrets">
+	<div id="home3" class="home homeEp">
         <div class="bg-gris4">
             <?php
                 include_once('./INC/entete.php');
@@ -16,11 +16,11 @@
                 <div class="col-6 item2" id="videoEp">
                     <figure><!--class="video2"-->
                         <figcaption class="videoEp">
-                            Bande annonce <span>Harry Potter à l'école des sorciers [Fr]</span>
+                            Bande annonce <span>Harry Potter et le Prisonnier d'Azkaban [Fr]</span>
                         </figcaption>
                         <div id="videoEp">
-                            <video id="videoAccueil" width="720" height="300" controls 
-                                source src="./vid/Harry Potter à l'école des Sorciers - Bande Annonce VF.mp4" type="video/mp4">
+                            <video id="videoAccueil" width="" height="300" controls 
+                                source src="./vid/Harry potter et le prisonnier d'azkaban (VF) - Bande Annonce.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo
                             </video>
                         </div>
@@ -28,9 +28,9 @@
                 </div>
                 <div class="col-3" id="liensEp">
                     <div class="row">
-                        <a class="liensEp col-10 offset-1" id="lien1Ep" href="chambreSecrets.php">
+                        <a class="liensEp col-10 offset-1" id="lien1Ep" href="coupeDeFeu.php">
                             Suis la visite :<br>
-                            Harry Potter et la Chambre des Secrets
+                            Harry Potter et la Coupe de Feu
                         </a>
                     </div>
                     <div class="row">
@@ -41,42 +41,27 @@
 
             <div id="PrezEpisode" class="row">
                 <h2 class="center bold">
-                    Bienvenue Nouvel élève de Poudlard !
+                    Vous entrez en 3è année à Poudlard !
                 </h2>
                 <div class="col-8 offset-2">
-                    
                     <p>
-                        Tu as reçu ta lettre d'inscription au collège Poudlard, l'Ecole de 
-                        Sorcellerie. Tous les professeurs de Poudlard te souhaitent la 
-                        bienvenue. Tu verras, Poudlard est comme une grande famille, même si 
-                        les élèves sont répartis en 4 "Maisons".
+                        Vous avez sans doute entendu la nouvelle de l'évasion de 
+                        <span class="bold">Sirius Black</span> de la prison d'Azkaban 
+                        durant l'été.
+                        Afin d'assurer votre sécurité, des détraqueurs feront des rondes 
+                        autour du château de Poudlard. Mais rassurez-vous, aucun d'eux 
+                        n'a l'autorisation de s'introduire à l'intérieur, ni de 
+                        s'approcher des élèves.
                     </p><p>
-                        Poudlard a été construit par 4 grands sorciers : <span class="bold">
-                            Godric Gryffondor</span>, <span class="bold">Salazar Serpentard
-                            </span>, <span class="bold">Rowena Serdaigle</span> et
-                            <span class="bold">Helga Poufsoufle</span>. Mais aucun n'aurait 
-                            pu le faire sans les 3 autres. C'est pourquoi, au sein du 
-                            collège, tous doivent être unis, quelle que soit leur Maison.
+                        Cette année, votre professeur de défense contre les forces du 
+                        mal sera <span class="bold">Remus Lupin</span>.
                     </p><p>
-                        Durant l'année scolaire, tous les cours sont obligatoires, mais vous 
-                        ferez des sorties (la visite du village de Pré-au-Lard, par exemple), 
-                        des fêtes au collège, et le tournoi de Quidditch. Le quidditch est 
-                        le sport international des sorciers, évidemment on le pratique à 
-                        Poudlard. Chaque Maison a son équipe. Un tournoi est organisé au 
-                        sein de l'école, et l'équipe vainqueure participe au tournoi 
-                        international qui se déroule à la fin de l'année scolaire, juste 
-                        avant les BUSE.
-                    </p><p>
-                        Les BUSE (Brevet Universel de Sorcellerie Elémentaire) valident 
-                        votre année d'étude. Au cas où l'idée te prendrait d'essayer de 
-                        tricher aux examens, sache que la sanction est l'exclusion 
-                        définitive de l'école, et pour les 1è et 2è années, une condamnation 
-                        par le Ministère de la Magie pour la pratique non autorisée de la 
-                        magie hors des heures de cours.
+                        Les professeurs et moi ferons notre possible pour que cette 
+                        année se passe au mieux, et que la présence des 
+                        détraqueur ne soit pas visible. 
                     </p><p class="center bold">
-                        Tu as compris que les règles sont importantes ici à Poudlard, mais 
-                        maintenant, place à la fête et au bon repas !<br>
-                        Encore bienvenue à tous et régalez-vous bien !
+                        Pour le moment, profitez de ce repas de fête, et bon retour à 
+                        Poudlard !
                     </p>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 <?php
     include_once('./INC/head.php');
 ?>
-<body id="banquets">
-	<div id="home1" class="home homeEp">
+<body id="secrets">
+	<div id="home7" class="home homeEp">
         <div class="bg-gris4">
             <?php
                 include_once('./INC/entete.php');
@@ -16,11 +16,23 @@
                 <div class="col-6 item2" id="videoEp">
                     <figure><!--class="video2"-->
                         <figcaption class="videoEp">
-                            Bande annonce <span>Harry Potter à l'école des sorciers [Fr]</span>
+                            Bande annonce <span>Harry Potter et les reliques de la mort - Partie 1 [Fr]</span>
                         </figcaption>
                         <div id="videoEp">
-                            <video id="videoAccueil" width="720" height="300" controls 
-                                source src="./vid/Harry Potter à l'école des Sorciers - Bande Annonce VF.mp4" type="video/mp4">
+                            <video id="videoAccueil" width="720px" height="300" controls 
+                                source src="./vid/Harry Potter Et Les Reliques De la Mort, P1 (VF).mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo
+                            </video>
+                        </div>
+                    </figure>
+
+                    <figure><!--class="video2"-->
+                        <figcaption class="videoEp">
+                            Bande annonce <span>Harry Potter et les reliques de la mort  - Partie 2 [Fr]</span>
+                        </figcaption>
+                        <div id="videoEp">
+                            <video id="videoAccueil" width="720px" height="300" controls 
+                                source src="./vid/Harry Potter et les reliques de la mort Partie 2 Bande Annonce Francaise VF (HD).mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo
                             </video>
                         </div>
@@ -28,9 +40,9 @@
                 </div>
                 <div class="col-3" id="liensEp">
                     <div class="row">
-                        <a class="liensEp col-10 offset-1" id="lien1Ep" href="chambreSecrets.php">
-                            Suis la visite :<br>
-                            Harry Potter et la Chambre des Secrets
+                        <a class="liensEp col-10 offset-1" id="lien1Ep" href="reliquesDeLaMort.php">
+                            Reviens au début de la visite :<br>
+                            Harry Potter à l'Ecole des sorciers
                         </a>
                     </div>
                     <div class="row">
@@ -41,42 +53,21 @@
 
             <div id="PrezEpisode" class="row">
                 <h2 class="center bold">
-                    Bienvenue Nouvel élève de Poudlard !
+                    Vos études à Poudlard sont terminées...
                 </h2>
                 <div class="col-8 offset-2">
-                    
                     <p>
-                        Tu as reçu ta lettre d'inscription au collège Poudlard, l'Ecole de 
-                        Sorcellerie. Tous les professeurs de Poudlard te souhaitent la 
-                        bienvenue. Tu verras, Poudlard est comme une grande famille, même si 
-                        les élèves sont répartis en 4 "Maisons".
+                        ... mais <span class="bold">Voldemort</span> a retrouvé ses pouvoirs. 
+                        Il cherche désormais les reliques de la mort afin de devenir 
+                        invincible ! 
                     </p><p>
-                        Poudlard a été construit par 4 grands sorciers : <span class="bold">
-                            Godric Gryffondor</span>, <span class="bold">Salazar Serpentard
-                            </span>, <span class="bold">Rowena Serdaigle</span> et
-                            <span class="bold">Helga Poufsoufle</span>. Mais aucun n'aurait 
-                            pu le faire sans les 3 autres. C'est pourquoi, au sein du 
-                            collège, tous doivent être unis, quelle que soit leur Maison.
+                        Il faudra, non seulement échapper aux <span class="bold">Mangemorts</span>, mais aussi 
+                        trouver les reliques avant eux, et les vaincre...
                     </p><p>
-                        Durant l'année scolaire, tous les cours sont obligatoires, mais vous 
-                        ferez des sorties (la visite du village de Pré-au-Lard, par exemple), 
-                        des fêtes au collège, et le tournoi de Quidditch. Le quidditch est 
-                        le sport international des sorciers, évidemment on le pratique à 
-                        Poudlard. Chaque Maison a son équipe. Un tournoi est organisé au 
-                        sein de l'école, et l'équipe vainqueure participe au tournoi 
-                        international qui se déroule à la fin de l'année scolaire, juste 
-                        avant les BUSE.
-                    </p><p>
-                        Les BUSE (Brevet Universel de Sorcellerie Elémentaire) valident 
-                        votre année d'étude. Au cas où l'idée te prendrait d'essayer de 
-                        tricher aux examens, sache que la sanction est l'exclusion 
-                        définitive de l'école, et pour les 1è et 2è années, une condamnation 
-                        par le Ministère de la Magie pour la pratique non autorisée de la 
-                        magie hors des heures de cours.
-                    </p><p class="center bold">
-                        Tu as compris que les règles sont importantes ici à Poudlard, mais 
-                        maintenant, place à la fête et au bon repas !<br>
-                        Encore bienvenue à tous et régalez-vous bien !
+                        Poudlard sera le théâtre du combat contre Voldemort, car c'est 
+                        là que vous pouvez trouver de l'aide !
+                        <p class="center bold">
+                        
                     </p>
                 </div>
             </div>

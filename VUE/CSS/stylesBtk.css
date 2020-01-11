@@ -81,7 +81,7 @@ img#enseigneBoutik {
 /******************** fin #boutik modal ************************/
 
 div#homebtk {
-    background-image: url('../IMG/piocheIMG/vitrine2.jpeg');
+    background-image: url('../IMG/vitrine2.jpeg');
     background-repeat: no-repeat;
     background-position-y: -100px;
 /*    background-attachment: fixed;     */
@@ -96,6 +96,10 @@ div#homebtk {
 #boutik .categ {
     font-weight: bold;
     text-align: center;
+}
+#homebtk h1, #homebtk h2 {
+    background-color:rgba(0,0,0,.8);
+    width: 100%;
 }
 
 

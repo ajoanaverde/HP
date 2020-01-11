@@ -14,12 +14,12 @@ fond #boutik : #677264
     --black: #000000;
     --orange: #ff9027;
     --blanc: #FCFEFC;
-    --bleuFonce: #0F1F37;
+    --bleuFonce: #060C16;
     --grisBoutik: #020202;
 }
 body {
 	margin: 0;
-	background-color: var(--black);
+	background-color: var(--bleuFonce);
 	font-family: "URW Chancery L", cursive;
 	color: white;
 /*	font-family: "HP";	*/
@@ -49,6 +49,12 @@ h2 {
     font-size: 1.2em;
 }
 
+h1, h2 {
+    background-color: rgba(0,0,0,.8);
+    width:100%;
+/*    text-align:center;    */
+}
+
 
 /***************** class ******************************/
 
@@ -65,7 +71,7 @@ h2 {
     background-color: rgba(15,31,55,.7);
 }
 .bg-gris4 {
-    background-color: rgba(15,31,55,.4);
+    background-color: rgba(0,0,0,.4);
 }
 .cap {
     text-transform: capitalize;
@@ -102,7 +108,7 @@ h2 {
     background-repeat: no-repeat;
     min-height: 1100px;
 /*    min-width: 1900px;    */
-    min-width: 1690px;
+    min-width: 1685px;
 }
 .home:hover {
     filter: grayscale(0);
@@ -228,7 +234,6 @@ div#animP1 img {
 
 /********** pages épisodes ******************/
 
-
 h1.titre {
 	margin-top: 0;
 	font-size: 5em;
@@ -275,6 +280,7 @@ figcaption span {
 #PrezEpisode {
     margin-top: 150px;
     margin-bottom: 100px;
+    text-align: justify;
 }
 #PrezEpisode h2 {
     margin-bottom: 50px;
@@ -294,25 +300,81 @@ figcaption span {
     box-shadow: var(--orange) -3px 2px 5px;
 }
 
+/***************    footer  **********************/
+
+#FooterLienShop {
+    width: 90%;
+    margin: 20px auto;
+}
 
 
 
-/********* salleBanquets.html ********************/
+
+/********* salleBanquets.php ********************/
 
 #home1 {
-	height: 1450px;
-	background-image: url(../IMG/Grande_Salle.jpg);	
+	height: 1200px;
+	background-image: url('../IMG/Grande_Salle.png');	
     background-repeat: no-repeat;
     background-position-y: 0px;
-    background-position-x: 100px;
-	background-size: auto;
+    background-size: 100%;
+    
 }
 
-/************* salle Secrets ***************************/
-body#secrets {
-	background-image: url("IMG/porteChambreSecrets-1920px.jpg");	
-	background-repeat: no-repeat;	
+/************* chambreSecrets ***************************/
+#home2 {
+    background-image: url("../IMG/porteChambreSecrets.png");	
+    background-repeat: no-repeat;
+    background-size: 150% 35%;
+    background-position-x: -400px;
 }
+
+/*************  prisonnierAzkaban  ************************/
+#home3 {
+    background-image: url("../IMG/affichePrisonnierAzkaban.jpeg");	
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+}
+
+/*************  coupeDeFeu   ******************************/
+#home4 {
+    background-image: url("../IMG/coupeDeFeuBleue.jpeg");	
+    background-repeat: no-repeat;
+    background-size: 99%;
+}
+
+/*************  ordreDuPhenix   ****************************/
+#home5 {
+    background-image: url("../IMG/ordreDuPhenixProphecies.jpeg");	
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: -300px;
+}
+
+/*************  princeSangMele   ****************************/
+#home6 {
+    background-image: url("../IMG/princeSangMeleRogue.jpeg");	
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position-x: -100px;
+}
+
+/*************  reliquesDeLaMort   ****************************/
+#home7 {
+    background-image: url("../IMG/reliquesmortCombatFinal.jpeg");	
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -100px;
+}
+#carouselEp {
+    background-image: url("../IMG/reliquesmortSymbole.png");	
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+/*    background-position-y: -300px;    */
+    height:1000px;
+}
+
+
 
 
 
@@ -343,7 +405,7 @@ body#secrets {
 #prezBoutik figure {
     border:var(--blanc) 2px inset;
     margin:10px;
-    background-color: var(--bleuFonce);
+    background-color: var(--black);
 }
 #prezBoutik figure img {
     width: 90%;
